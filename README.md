@@ -3,18 +3,18 @@ Find an in-depth assignment description in the Google Doc [here](https://docs.go
 
 ### Index
 File: `weather/templates/weather/index.html`
-URL: `http://<your host IP here>:8000/weather/`
+URL: `http://project-1-starter-code-qlnjq-jach866608.codeanyapp.com/weather/`
 
 ### Files to edit
-* Forecast (single location) no alert: `weather/templates/weather/forecast.html`
-* Forecast (single location) with alert: `weather/templates/weather/forecast-alert.html`
-* Comparison across locations no alert: `weather/templates/weather/comparison.html`
-* Comparison across locations with alert: `weather/templates/weather/comparison-alert.html`
+* Forecast (single location) with alert: `weather/templates/weather/forecast.html`
+* Forecast (single location) without alert: `weather/templates/weather/forecast-without.html`
+* See Priority Storms (comparisons): `weather/templates/weather/see-priority-storms.html`
+* Alert Warning Page: `weather/templates/weather/alert.html`
 * CSS for styling: `weather/static/weather/css/style.css`
 
 ### URLs to access
 * Index: `http://<your host IP here>:8000/weather/`
 * Forecast (single location) no alert: `weather/templates/weather/forecast/`
-* Forecast (single location) with alert: `weather/templates/weather/forecast/alert/`
-* Comparison across locations no alert: `weather/templates/weather/comparison/`
-* Comparison across locations with alert: `weather/templates/weather/comparison/alert/`
+* Forecast (single location) with alert: `weather/templates/weather/forecast/without/`
+* See Priority Storms (comparisons): `weather/templates/weather/seepriority/`
+* Comparison across locations with alert: `weather/templates/weather/alert/`

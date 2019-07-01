@@ -1,0 +1,45 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alert!</title>
+	
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class = "row">
+      <div class="col-12 text-center">
+         <!--time-->
+        <p>
+           22:01
+        </p>
+      </div>
+    </div>
+    
+    <div class = "alert-div">
+        <div class = "alert-div-pad text-center">
+          <p style = "color:Red; font-size:30px; text-align: center;">
+            Warning: <br>
+            Storm is coming soon!!
+            <br>
+            Please be ready!
+          </p>
+        </div>
+      <div class = "row">
+        <div class = "col text-center">
+          <a href="/weather/seepriority" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Back</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+
