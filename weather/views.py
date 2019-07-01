@@ -7,11 +7,11 @@ def forecast(request):
 def forecast_alert(request):
     return render(request, 'weather/forecast-alert.html')
 
-def comparison(request):
-    return render(request, 'weather/comparison.html')
+def neareststorm(request):
+    return render(request, 'weather/nearest-storm.html')
 
-def comparison_alert(request):
-    return render(request, 'weather/comparison-alert.html')
+def seepriority(request):
+    return render(request, 'weather/see-priority-storms.html')
 
 def index(request):
     return render(request, 'weather/index.html')

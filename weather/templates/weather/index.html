@@ -3,28 +3,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Current Weather</title>
+	<title>Chase the Storm - Main</title>
 	
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
-
+  <!--<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">-->
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 </head>
+  
 <body>
 
-	<!-- replace this html -->
-	<div class="container">
-		<div class="jumbotron text-light bg-primary">
-			<h1>Congratulations</h1>
-			<p>You've set your environment up correctly!</p>
-		</div>
-
-		<a href="/weather/forecast/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast</a>
+	<div class="container-fluid"> <!--background image in container?-->
+    
+    <div class = "row">
+      <div class="col-12 text-center">
+         <!--time-->
+        <p>
+           22:01
+        </p>
+      </div>
+    </div>
+    
+    <div class = "padding-main">
+      <div class = "row">
+      <div class = "col-12 text-center" style="position: bottom;">
+            <!--title of app-->
+        <h1 style = "color:white;">
+            Chase <br>
+            the Storm
+        </h1>
+      </div>
+    </div>
+  
+    <div class = "row">
+      <div class = "col-4 text-right">
+        <!--Find the Nearest Storm-->
+        <img src = "/static/weather/assets/tornado_icon.png" style="width:50px;height:50px;">
+      </div>
+      <a href="/weather/neareststorm/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Find the Nearest Storm</a>
+    </div>
+  
+    <div class = "row">
+      <div class = "col-4 text-right">
+        <!--See Priority Storms-->
+        <img src = "/static/weather/assets/tornado_icon.png" style="width:50px;height:50px;">
+      </div>
+      <a href="/weather/seepriority/" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">See Priority Storms</a>
+    </div>
+    </div>
+    
+    
+		<!--
+    <a href="/weather/forecast/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast</a>
 		<a href="/weather/forecast/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Forecast with alert</a>
 		<a href="/weather/comparison/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison</a>
 		<a href="/weather/comparison/alert/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Comparison with alert</a>
+    -->
 	</div>
 	
-	<!-- /replace this html -->
 </body>
 </html>
 
